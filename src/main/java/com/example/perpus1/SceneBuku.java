@@ -12,4 +12,11 @@ public class SceneBuku {
         Scene sceneAwal = app.getSceneAwal();
         primaryStage.setScene(sceneAwal);
     }
+    @FXML
+    protected void onAdd(){
+        MainApplication app = MainApplication.getApplicationInstance();
+        Stage primaryStage = app.getPrimaryStage();
+        Scene formBuku = app.getFormBuku();
+        primaryStage.setScene(formBuku);
+    }
 }

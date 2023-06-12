@@ -35,6 +35,8 @@ public class MainApplication extends Application {
     private ScenePengembalian2 sceneControllerPengembalian2;
     private Scene formAnggota;
     private FormAnggota formAnggotaController;
+    private Scene formBuku;
+    private FormBuku formBukuController;
 
     public Stage getPrimaryStage() {
         return primaryStage;
@@ -104,6 +106,14 @@ public class MainApplication extends Application {
         return formAnggotaController;
     }
 
+    public Scene getFormBuku() {
+        return formBuku;
+    }
+
+    public FormBuku getFormBukuController() {
+        return formBukuController;
+    }
+
     @Override
     public void start(Stage stage) throws IOException {
         this.primaryStage = stage;
@@ -123,7 +133,7 @@ public class MainApplication extends Application {
         scenePeminjaman1 = new Scene(fxmlLoader.load(), 600, 400);
         sceneControllerPeminjaman1 = fxmlLoader.getController();
 
-        fxmlLoader = new FXMLLoader(MainApplication.class.getResource("scenePeminjaman.fxml"));
+        fxmlLoader = new FXMLLoader(MainApplication.class.getResource("scenePeminjaman2.fxml"));
         scenePeminjaman2 = new Scene(fxmlLoader.load(), 600, 400);
         sceneControllerPeminjaman2 = fxmlLoader.getController();
 
@@ -131,7 +141,7 @@ public class MainApplication extends Application {
         scenePengembalian1 = new Scene(fxmlLoader.load(), 600, 400);
         sceneControllerPengembalian1 = fxmlLoader.getController();
 
-        fxmlLoader = new FXMLLoader(MainApplication.class.getResource("scenePengembalian.fxml"));
+        fxmlLoader = new FXMLLoader(MainApplication.class.getResource("scenePengembalian2.fxml"));
         scenePengembalian2 = new Scene(fxmlLoader.load(), 600, 400);
         sceneControllerPengembalian2 = fxmlLoader.getController();
 
@@ -139,6 +149,9 @@ public class MainApplication extends Application {
         formAnggota = new Scene(fxmlLoader.load(), 600, 400);
         formAnggotaController = fxmlLoader.getController();
 
+        fxmlLoader = new FXMLLoader(MainApplication.class.getResource("formBuku.fxml"));
+        formBuku = new Scene(fxmlLoader.load(), 600, 400);
+        formBukuController = fxmlLoader.getController();
 
         stage.setTitle("Perpustakaan ABC");
         stage.setScene(sceneAwal);

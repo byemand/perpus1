@@ -25,6 +25,6 @@
             <TableColumn prefWidth="125.33331298828125" text="Jenis Buku" />
             </columns>
         </TableView>
-        <Button layoutX="504.0" layoutY="50.0" mnemonicParsing="false" text="+ Add" />
+        <Button layoutX="504.0" layoutY="50.0" mnemonicParsing="false" onAction="#onAdd" text="+ Add" />
     </children>
 </AnchorPane>
