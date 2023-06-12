@@ -12,19 +12,19 @@
                 <Font name="SansSerif Regular" size="30.0" />
             </font>
         </Text>
-        <Button layoutX="387.0" layoutY="148.0" mnemonicParsing="false" onAction="#onClickAnggota" text="List Anggota">
+        <Button layoutX="38.0" layoutY="252.0" mnemonicParsing="false" onAction="#onClickAnggota" prefHeight="133.0" prefWidth="239.0" text="List Anggota">
          <font>
             <Font name="SansSerif Regular" size="20.0" />
          </font></Button>
-        <Button layoutX="60.0" layoutY="241.0" mnemonicParsing="false" onAction="#onClickPeminjaman" text="Peminjaman Buku">
+        <Button layoutX="322.0" layoutY="252.0" mnemonicParsing="false" onAction="#onClickPeminjaman" prefHeight="133.0" prefWidth="239.0" text="Peminjaman Buku">
          <font>
             <Font name="SansSerif Regular" size="20.0" />
          </font></Button>
-        <Button layoutX="88.0" layoutY="148.0" mnemonicParsing="false" onAction="#onClickBuku" text="List Buku">
+        <Button layoutX="38.0" layoutY="100.0" mnemonicParsing="false" onAction="#onClickBuku" prefHeight="133.0" prefWidth="239.0" text="List Buku">
          <font>
             <Font name="SansSerif Regular" size="20.0" />
          </font></Button>
-        <Button layoutX="353.0" layoutY="241.0" mnemonicParsing="false" onAction="#onClickPengembalian" text="Pengembalian Buku">
+        <Button layoutX="322.0" layoutY="100.0" mnemonicParsing="false" onAction="#onClickPengembalian" prefHeight="133.0" prefWidth="239.0" text="Pengembalian Buku">
          <font>
             <Font name="SansSerif Regular" size="20.0" />
          </font></Button>
