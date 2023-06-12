@@ -4,12 +4,20 @@ import javafx.fxml.FXML;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class ScenePeminjaman {
+public class ScenePeminjaman1 {
     @FXML
     protected void onClickBack(){
         MainApplication app = MainApplication.getApplicationInstance();
         Stage primaryStage = app.getPrimaryStage();
         Scene sceneAwal = app.getSceneAwal();
         primaryStage.setScene(sceneAwal);
+    }
+
+    @FXML
+    protected void add(){
+        MainApplication app = MainApplication.getApplicationInstance();
+        Stage primaryStage = app.getPrimaryStage();
+        Scene scenePeminjaman2 = app.getScenePeminjaman2();
+        primaryStage.setScene(scenePeminjaman2);
     }
 }

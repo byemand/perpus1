@@ -25,10 +25,15 @@ public class MainApplication extends Application {
     private SceneAnggota sceneControllerAnggota;
     private Scene sceneBuku;
     private SceneBuku sceneControllerBuku;
-    private Scene scenePeminjaman;
-    private ScenePeminjaman sceneControllerPeminjaman;
-    private Scene scenePengembalian;
-    private ScenePengembalian sceneControllerPengembalian;
+    private Scene scenePeminjaman1;
+    private ScenePeminjaman1 sceneControllerPeminjaman1;
+
+    private Scene scenePeminjaman2;
+    private ScenePeminjaman2 sceneControllerPeminjaman2;
+    private Scene scenePengembalian1;
+    private ScenePengembalian1 sceneControllerPengembalian1;
+    private Scene scenePengembalian2;
+    private ScenePengembalian2 sceneControllerPengembalian2;
 
     public Stage getPrimaryStage() {
         return primaryStage;
@@ -58,20 +63,36 @@ public class MainApplication extends Application {
         return sceneControllerBuku;
     }
 
-    public Scene getScenePeminjaman() {
-        return scenePeminjaman;
+    public Scene getScenePeminjaman1() {
+        return scenePeminjaman1;
     }
 
-    public ScenePeminjaman getSceneControllerPeminjaman() {
-        return sceneControllerPeminjaman;
+    public ScenePeminjaman1 getSceneControllerPeminjaman1() {
+        return sceneControllerPeminjaman1;
     }
 
-    public Scene getScenePengembalian() {
-        return scenePengembalian;
+    public Scene getScenePeminjaman2() {
+        return scenePeminjaman2;
     }
 
-    public ScenePengembalian getSceneControllerPengembalian() {
-        return sceneControllerPengembalian;
+    public ScenePeminjaman2 getSceneControllerPeminjaman2() {
+        return sceneControllerPeminjaman2;
+    }
+
+    public Scene getScenePengembalian1() {
+        return scenePengembalian1;
+    }
+
+    public ScenePengembalian1 getSceneControllerPengembalian1() {
+        return sceneControllerPengembalian1;
+    }
+
+    public Scene getScenePengembalian2() {
+        return scenePengembalian2;
+    }
+
+    public ScenePengembalian2 getSceneControllerPengembalian2() {
+        return sceneControllerPengembalian2;
     }
 
     @Override
@@ -89,14 +110,21 @@ public class MainApplication extends Application {
         sceneBuku = new Scene(fxmlLoader.load(), 600, 400);
         sceneControllerBuku = fxmlLoader.getController();
 
+        fxmlLoader = new FXMLLoader(MainApplication.class.getResource("scenePeminjaman1.fxml"));
+        scenePeminjaman1 = new Scene(fxmlLoader.load(), 600, 400);
+        sceneControllerPeminjaman1 = fxmlLoader.getController();
+
         fxmlLoader = new FXMLLoader(MainApplication.class.getResource("scenePeminjaman.fxml"));
-        scenePeminjaman = new Scene(fxmlLoader.load(), 600, 400);
-        sceneControllerPeminjaman = fxmlLoader.getController();
+        scenePeminjaman2 = new Scene(fxmlLoader.load(), 600, 400);
+        sceneControllerPeminjaman2 = fxmlLoader.getController();
+
+        fxmlLoader = new FXMLLoader(MainApplication.class.getResource("scenePengembalian1.fxml"));
+        scenePengembalian1 = new Scene(fxmlLoader.load(), 600, 400);
+        sceneControllerPengembalian1 = fxmlLoader.getController();
 
         fxmlLoader = new FXMLLoader(MainApplication.class.getResource("scenePengembalian.fxml"));
-        scenePengembalian = new Scene(fxmlLoader.load(), 600, 400);
-        sceneControllerPengembalian = fxmlLoader.getController();
-
+        scenePengembalian2 = new Scene(fxmlLoader.load(), 600, 400);
+        sceneControllerPengembalian2 = fxmlLoader.getController();
 
         stage.setTitle("Perpustakaan ABC");
         stage.setScene(sceneAwal);

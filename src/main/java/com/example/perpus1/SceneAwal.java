@@ -28,15 +28,15 @@ public class SceneAwal {
     protected void onClickPeminjaman() {
         MainApplication app = MainApplication.getApplicationInstance();
         Stage primaryStage = app.getPrimaryStage();
-        Scene scenePeminjaman = app.getScenePeminjaman();
-        primaryStage.setScene(scenePeminjaman);
+        Scene scenePeminjaman1 = app.getScenePeminjaman1();
+        primaryStage.setScene(scenePeminjaman1);
     }
     @FXML
     protected void onClickPengembalian() {
         MainApplication app = MainApplication.getApplicationInstance();
         Stage primaryStage = app.getPrimaryStage();
-        Scene scenePengembalian = app.getScenePengembalian();
-        primaryStage.setScene(scenePengembalian);
+        Scene scenePengembalian1 = app.getScenePengembalian1();
+        primaryStage.setScene(scenePengembalian1);
     }
 
 }

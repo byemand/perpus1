@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.perpus1.ScenePeminjaman">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.perpus1.ScenePeminjaman2">
 
     <children>
         <Text layoutX="50.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PEMINJAMAN BUKU">
@@ -16,8 +16,7 @@
                 <Font size="30.0" />
             </font>
         </Text>
-        <Button layoutX="275.0" layoutY="331.0" mnemonicParsing="false" onAction="#onClickBack" text="Back" />
-        <Button layoutX="276.0" layoutY="275.0" mnemonicParsing="false" text="Save" />
+        <Button layoutX="278.0" layoutY="274.0" mnemonicParsing="false" onAction="#saveAndBackTo1" text="Save" />
       <ComboBox layoutX="299.0" layoutY="123.0" prefHeight="25.0" prefWidth="175.0" />
       <ComboBox layoutX="299.0" layoutY="166.0" prefHeight="25.0" prefWidth="175.0" />
       <Label layoutX="110.0" layoutY="123.0" text="ID - NAMA">
