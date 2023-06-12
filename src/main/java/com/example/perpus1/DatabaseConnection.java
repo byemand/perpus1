@@ -6,21 +6,22 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class DatabaseConnection {
-    public static Connection databaseLink;
+
 
     public static Connection getConnection(){
-        String databaseName = "Perpustakaan";
+        String driver = "com.mysql.cj.jdbc.Driver";
         String user = "root";
         String password = "";
-        String url = "jdbc:mysql://localhost/" + databaseName;
+        String url = "jdbc:mysql://localhost:3306/perpustakaan?&serverTimezone=UTC";
 
         try {
-            databaseLink = DriverManager.getConnection(url, user, password);
+            Class.forName(driver);
+            Connection connection = DriverManager.getConnection(url,user,password);
+            return connection;
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        return  databaseLink;
+        return null;
     }
 
     public static Statement getStatement() throws SQLException {

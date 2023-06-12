@@ -23,9 +23,9 @@
                 <Font name="SansSerif Regular" size="20.0" />
             </font>
         </Label>
-        <TextField layoutX="300.0" layoutY="125.0" prefHeight="25.0" prefWidth="179.0" />
-        <TextField layoutX="300.0" layoutY="227.0" prefHeight="25.0" prefWidth="179.0" />
-        <TextField layoutX="300.0" layoutY="175.0" prefHeight="25.0" prefWidth="179.0" />
+        <TextField fx:id="id_anggota" layoutX="300.0" layoutY="125.0" prefHeight="25.0" prefWidth="179.0" />
+        <TextField fx:id="noTelp_anggota" layoutX="300.0" layoutY="227.0" prefHeight="25.0" prefWidth="179.0" />
+        <TextField fx:id="nama_anggota" layoutX="300.0" layoutY="175.0" prefHeight="25.0" prefWidth="179.0" />
         <Label layoutX="176.0" layoutY="52.0" text="FORM ANGGOTA">
             <font>
                 <Font name="SansSerif Regular" size="30.0" />

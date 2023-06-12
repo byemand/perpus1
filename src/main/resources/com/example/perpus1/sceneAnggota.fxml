@@ -3,25 +3,29 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.perpus1.SceneAnggota">
    <children>
-      <Text layoutX="50.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ANGGOTA">
+      <Text layoutX="37.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ANGGOTA">
          <font>
             <Font size="30.0" />
          </font>
       </Text>
-      <Button layoutX="279.0" layoutY="331.0" mnemonicParsing="false" onAction="#onClickBack" text="Back" />
-      <TableView layoutX="50.0" layoutY="89.0" prefHeight="236.0" prefWidth="504.0">
+      <Button layoutX="280.0" layoutY="360.0" mnemonicParsing="false" onAction="#onClickBack" text="Back" />
+      <TableView fx:id="tabelAnggota" layoutX="37.0" layoutY="61.0" prefHeight="236.0" prefWidth="553.0">
         <columns>
-          <TableColumn prefWidth="139.33334350585938" text="ID" />
-          <TableColumn minWidth="0.0" prefWidth="170.6666259765625" text="Nama Lengkap" />
-            <TableColumn prefWidth="191.3333740234375" text="No. Telpon" />
+          <TableColumn fx:id="colID" prefWidth="139.33334350585938" text="ID" />
+          <TableColumn fx:id="colNama" minWidth="0.0" prefWidth="237.3333740234375" text="Nama Lengkap" />
+            <TableColumn fx:id="colNoTelp" prefWidth="173.33331298828125" text="No. Telpon" />
         </columns>
       </TableView>
-      <Button layoutX="504.0" layoutY="50.0" mnemonicParsing="false" onAction="#onAdd" text="+ Add" />
+      <TextField fx:id="id" layoutX="37.0" layoutY="327.0" promptText="ID" />
+      <TextField fx:id="nama" layoutX="198.0" layoutY="328.0" promptText="Nama" />
+      <TextField fx:id="noTelp" layoutX="367.0" layoutY="328.0" promptText="No Telp" />
+      <Button layoutX="539.0" layoutY="327.0" mnemonicParsing="false" onAction="#save" text="add" />
    </children>
 </AnchorPane>
