@@ -7,14 +7,26 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.perpus1.SceneAwal">
     <children>
-        <Text layoutX="160.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PERPUSTAKAAN ABC">
+        <Text layoutX="143.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PERPUSTAKAAN ABC">
             <font>
-                <Font size="30.0" />
+                <Font name="SansSerif Regular" size="30.0" />
             </font>
         </Text>
-        <Button layoutX="143.0" layoutY="175.0" mnemonicParsing="false" onAction="#onClickAnggota" text="Anggota" />
-        <Button layoutX="384.0" layoutY="175.0" mnemonicParsing="false" onAction="#onClickPeminjaman" text="Peminjaman Buku" />
-        <Button layoutX="153.0" layoutY="276.0" mnemonicParsing="false" onAction="#onClickBuku" text="Buku" />
-        <Button layoutX="379.0" layoutY="276.0" mnemonicParsing="false" onAction="#onClickPengembalian" text="Pengembalian Buku" />
+        <Button layoutX="60.0" layoutY="182.0" mnemonicParsing="false" onAction="#onClickAnggota" text="List Anggota">
+         <font>
+            <Font name="SansSerif Regular" size="20.0" />
+         </font></Button>
+        <Button layoutX="60.0" layoutY="241.0" mnemonicParsing="false" onAction="#onClickPeminjaman" text="Peminjaman Buku">
+         <font>
+            <Font name="SansSerif Regular" size="20.0" />
+         </font></Button>
+        <Button layoutX="60.0" layoutY="123.0" mnemonicParsing="false" onAction="#onClickBuku" text="List Buku">
+         <font>
+            <Font name="SansSerif Regular" size="20.0" />
+         </font></Button>
+        <Button layoutX="60.0" layoutY="294.0" mnemonicParsing="false" onAction="#onClickPengembalian" text="Pengembalian Buku">
+         <font>
+            <Font name="SansSerif Regular" size="20.0" />
+         </font></Button>
     </children>
 </AnchorPane>

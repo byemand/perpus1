@@ -22,6 +22,6 @@
             <TableColumn prefWidth="191.3333740234375" text="No. Telpon" />
         </columns>
       </TableView>
-      <Button layoutX="504.0" layoutY="50.0" mnemonicParsing="false" text="+ Add" />
+      <Button layoutX="504.0" layoutY="50.0" mnemonicParsing="false" onAction="#onAdd" text="+ Add" />
    </children>
 </AnchorPane>

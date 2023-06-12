@@ -12,4 +12,12 @@ public class SceneAnggota {
         Scene sceneAwal = app.getSceneAwal();
         primaryStage.setScene(sceneAwal);
     }
+
+    @FXML
+    protected void onAdd(){
+        MainApplication app = MainApplication.getApplicationInstance();
+        Stage primaryStage = app.getPrimaryStage();
+        Scene formAnggota = app.getFormAnggota();
+        primaryStage.setScene(formAnggota);
+    }
 }

@@ -27,13 +27,14 @@ public class MainApplication extends Application {
     private SceneBuku sceneControllerBuku;
     private Scene scenePeminjaman1;
     private ScenePeminjaman1 sceneControllerPeminjaman1;
-
     private Scene scenePeminjaman2;
     private ScenePeminjaman2 sceneControllerPeminjaman2;
     private Scene scenePengembalian1;
     private ScenePengembalian1 sceneControllerPengembalian1;
     private Scene scenePengembalian2;
     private ScenePengembalian2 sceneControllerPengembalian2;
+    private Scene formAnggota;
+    private FormAnggota formAnggotaController;
 
     public Stage getPrimaryStage() {
         return primaryStage;
@@ -95,6 +96,14 @@ public class MainApplication extends Application {
         return sceneControllerPengembalian2;
     }
 
+    public Scene getFormAnggota() {
+        return formAnggota;
+    }
+
+    public FormAnggota getFormAnggotaController() {
+        return formAnggotaController;
+    }
+
     @Override
     public void start(Stage stage) throws IOException {
         this.primaryStage = stage;
@@ -125,6 +134,11 @@ public class MainApplication extends Application {
         fxmlLoader = new FXMLLoader(MainApplication.class.getResource("scenePengembalian.fxml"));
         scenePengembalian2 = new Scene(fxmlLoader.load(), 600, 400);
         sceneControllerPengembalian2 = fxmlLoader.getController();
+
+        fxmlLoader = new FXMLLoader(MainApplication.class.getResource("formAnggota.fxml"));
+        formAnggota = new Scene(fxmlLoader.load(), 600, 400);
+        formAnggotaController = fxmlLoader.getController();
+
 
         stage.setTitle("Perpustakaan ABC");
         stage.setScene(sceneAwal);
